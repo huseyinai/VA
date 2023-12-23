@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Image</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .centered-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="centered-image">
+    <h1>Hey Lena</h1>
+  </div>
+  
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img src="lena.png" alt="Centered Image" style="border: 0px solid rgb(196, 19, 158); border-radius: 360px; transform: scale(0.2);" onclick="playTextToSpeech()">
+  </div>
+  <style>
+    @keyframes scaleAnimation {
+      0% {
+        border-width: 5px;
+      }
+      50% {
+        border-width: 30px;
+      }
+      100% {
+        border-width: 5px;
+      }
+    }
+
+    img {
+      animation: scaleAnimation 3s infinite;
+    }
+  </style>
+  <script>
+    
+  </script>
+</body>
+</html>
